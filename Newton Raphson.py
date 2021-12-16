@@ -1,4 +1,4 @@
-import math
+
 def nraphson(fn, x, tol=0.0001, maxiter=1000):
 	for i in range(100):
 		xnew = x - fn[0](x)/fn[1](x)
