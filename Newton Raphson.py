@@ -1,8 +1,8 @@
-
+# Solving Equation by Newtor-Raphson method
 def nraphson(fn, x, tol=0.0001, maxiter=1000):
 	for i in range(100):
-		xnew = x - fn[0](x)/fn[1](x)
-		if abs(xnew-x)< 0.001:
+		xnew = x - fn[0](x)/fn[1](x)   # Formula of Newton-Raphson
+		if abs(xnew-x)< 0.001:       # finding the successive iteration
 			break
 		x=xnew
 	return xnew, i	
